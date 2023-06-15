@@ -1,72 +1,42 @@
 *{
     margin: 0;
-    padding:0;
-    font-family: sans-serif;
+    padding: 0;
 }
-.display{ 
-   
+body{
+    background-color: rgb(30, 29, 29);
+}
+.first-page{ 
     width: 100%;
     height: 100vh;
-    background: linear-gradient(80deg,rgba(31, 31, 31, 0.8),rgb(0, 0, 0));
 }
-.nav{
-    display: inline-block;
-   
-    width: 100%;
-    height: 5%;
-    margin-top:1%;
-  
-  
-}
-.logo{
+.moible{
     display: flex;
-    float: left;
-    color: aliceblue;
-    margin-left: 70px;
-    font-size: 22px;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-
+    width: 100%;
+    height: 60vh;
 }
-.home{
-   
-    list-style: none;
-    margin-left: 60%;
-    margin-top: 6px;
-    margin-bottom: 3%;
-}
-li{ 
-    
-    float: left;
-   margin-left: 30px;
-   opacity: 0;
-   animation: slideTop 1s ease forwards;
-   
-}
-.active1{
-    color: rgb(0, 255, 238);
-}
-.active{
-    color: aliceblue;
-}
-a:hover{
-    color: rgb(0, 255, 238);
-    transition: .4s ease;
-}
-
 .home-content{
-    
-    color: white;
-    width: 50%;
-    height: 55%;
-    max-width: 600px;
-    margin-left: 5%;
-    margin-top: 8%;
-    float: left;
-  
+    color: aliceblue;  
+    margin-left: 3%;
+    margin-top: 5%;
+    float: left;   
+    width: 40%;
+    height: 70%;
+    overflow: auto;
 }
-.home-content h3{
-    font-size: 32px;
+
+.image{
+    margin-left: 12%;
+    margin-top: 10%;
+    float: left;   
+    width: 25%;
+    height: 60%;
+}
+.imageme{
+    height: 100%;
+    width: 100%;
+}
+.home-content h3{  
+    font-size: 30px;
     font-weight: 700;
     animation: slideBottom 1s ease forwards;
     animation-delay: .3s;
@@ -77,10 +47,9 @@ a:hover{
 }
 .home-content h3 span{
     color: #0ef;
- 
 }
 .home-content h1{
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     margin: -3px 0;
     animation: slideTop 1s ease forwards;
@@ -90,20 +59,27 @@ a:hover{
 .home-content p{
     font-size: 16px;
 }
-.image{
-    
-    margin-left: 15%;
-    margin-top: 3%;
+.image{   
+    margin-left: 12%;
+    margin-top: 5%;
     float: left;   
-    width: 25%;
-    height: 50%;
-    background-image: url(image/im2.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    width: 250px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.social-media a{
+.imageme{
+    width: 100%;
+    height: 100%;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media{
+    margin-left: 3%;
+}
+.social-media a{   
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +101,7 @@ a:hover{
 }
 
 .Download{
+    margin-left: 3%;
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
@@ -144,7 +121,7 @@ a:hover{
 /* KEYFRAMES ANIMATION */
 @keyframes slideRight {
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-300px);
         opacity: 0;
     }
     100%{
@@ -174,4 +151,853 @@ a:hover{
         opacity: 1;
     }
 }
+.about-me{
+    width: 100%;
+    height: 100vh;
+    border-top:1px solid grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+       
+}
 
+.about-h1{
+    color: white;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .2s;
+}
+.me-h1{
+    color: #0ef;
+}
+.about-me-photo{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    border: 2px solid  #0ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:dashed;  
+    animation: slideRight 1.6s ease forwards;
+    animation-delay: .2s;
+}
+.image-about-me{
+    width: 95%;
+    height: 95%;
+    border-radius:50%;  
+    border: 2px solid  #0ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-h3{
+    color: rgba(255, 255, 255, 0.884);
+    margin-top: 4%;
+    animation: slideRight 2.2s ease forwards;
+    animation-delay: .2s;
+}
+.about-me-info{    
+    width: 69%;
+    height: 12%;
+    margin-top: 4%;
+    overflow:auto;    
+    text-align: center;
+}
+
+.about-me-read-more{
+    width: 9%;
+    height: 8%; 
+    color: #0ef;
+    margin-top: 2%;
+    background:none;
+    border-color: #0ef;
+    border-radius: 10px;
+}
+.about-me-info1{
+    color: white;
+  
+}
+.education-me{
+    width: 100%;
+    height: 100vh;
+    border-top:1px solid grey;
+}
+.education-logo{
+    margin-top: 2%;
+    color: white;
+    margin-left:3%;  
+    width:fit-content;
+    height: fit-content;
+    text-decoration:underline #0ef;
+    margin-right: 5%; 
+    animation: slideRight 1.2s ease forwards;
+    animation-delay: .3s;
+}
+.introduce-logo{
+    color: white;
+    text-align: center;
+    animation: slideBottom 1.2s ease forwards;
+    animation-delay: .3s;   
+}
+.education-10th{
+    border: 1px solid rgba(152, 152, 152, 0.682);
+    width: 35%;
+    height: 30%;
+    margin-top: 3%;
+    float: left;
+    margin-left: 13.5%;
+    overflow: auto;
+}
+.education-12th{
+    border: 1px solid rgba(152, 152, 152, 0.682);
+    width: 35%;
+    height: 30%;
+    margin-top: 3%;
+    float: left;
+    margin-left: 3%;
+    overflow: auto;
+}
+.introduce-month{
+    color: rgba(255, 255, 255, 0.967);
+}
+.education-bca{
+    border: 2px solid rgba(152, 152, 152, 0.682);
+    width: 63%;
+    height: 25%;
+    margin-top: 2%;
+    float: left;
+    margin-left: 18.5%;
+    overflow: auto;
+}
+.logo-cal-p .bx-calendar-alt{
+    color:rgba(240, 248, 255, 0.758) ;
+    text-align: center;
+    padding:1%;
+    margin-left: 3.5%;
+    margin-top:4%
+}
+.logo-bca .bx-calendar-alt{
+    color:rgba(240, 248, 255, 0.758) ;
+   font-size: 30px;
+   text-align: center;
+   padding:1%;
+   margin-left: 1.5%;
+   margin-top:1%;
+}
+.introduce-month{
+    font-size:20px;   
+}
+.completed{
+    color: aliceblue;
+    margin-left: 5.5%;
+    text-decoration: underline rgb(0, 255, 221);
+}
+.completed-BCA1{
+    color: aliceblue;
+    margin-left: 2.8%;
+    text-decoration: underline rgb(0, 255, 221);
+}
+.introduce-info{
+    font-size:15px;
+    margin-left: 5.5%;
+    color: aliceblue;
+    text-align:start;
+    word-spacing: 1px;
+}
+.introduce-info-BCA{
+    font-size:15px;
+    margin-left: 3%;
+    color: aliceblue;
+    text-align:start;
+    word-spacing: 1px; 
+}
+.introduce-month-BCA{
+    font-size: 22px;
+}
+.introduce-month-BCA{
+    color: rgba(255, 255, 255, 0.967);
+}
+.skills-me{
+    width: 100%;
+    height: 100vh;
+    border-top:1px solid grey;
+}
+.skills-me-box1 {
+    border:2px solid grey;
+    width: 26.5%;
+    height: 24%;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    overflow:auto;
+}
+.skills-me-box2{
+    border:2px solid grey;
+    width: 26.5%;
+    height: 24%;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    overflow: auto;
+}
+.skills-logo{ 
+    color: white;
+    font-size: 40px;
+    margin-left: 4%;
+}
+.bxl-html5 ,.bxl-css3 , .bxl-javascript ,.bxl-react ,.bxl-java{
+    margin-top: 4.2%;
+}
+.logo-name{
+   float: right;
+   font-size: 16px;
+   margin-top: 8px;
+   margin-left: 5px;
+}
+.logo-name-js{
+    float: right;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.logo-name-java{
+    float: right;
+    font-size: 16px;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+.read-more-btn{
+    color: rgba(255, 255, 255, 0.658);
+}
+.contact-box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    border-top:1px solid grey;
+    left: -100%;
+}
+.contact-box.active{
+    left: 0;
+}
+.emailbox{
+    overflow:auto;
+    border: 2px solid rgb(8, 255, 239);
+    width:60%;
+    height:70%;
+    margin-left:20%;
+    margin-top:5%;
+    background: none;
+    backdrop-filter: blur(10px);
+}
+.mail1 ,.mail2{
+ color: rgba(240, 248, 255, 0.777);
+ outline: none;   
+ border: none;
+ padding: 1%;
+ width: 35%;
+ height: 10%;
+ margin-left:10%;
+ font-size: 25px;
+ font-weight: 500px;
+ background:none;
+ border-bottom: 2px solid white;
+}
+.mail1{
+    margin-top: 10%; 
+}
+.mail2{
+    margin-top:3%;
+}
+textarea{
+    width:35%;
+    padding: 1%;
+    margin-left:10%;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.755);
+    margin-top: 3%;
+    overflow:auto;
+    outline: none;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+.send{
+    font-size: 20px;
+    margin-left: 3%;
+    color: rgba(240, 248, 255, 0.792);
+    width:15%;
+    height: 10%; 
+    background:none;
+    border-color: rgb(0, 242, 255);
+    border-radius: 20px;
+}
+.mail1 .mail2::placeholder{
+    color: rgba(240, 248, 255, 0.748);
+}
+textarea::placeholder{
+    color: rgba(240, 248, 255, 0.749);
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:991px  ) {
+    .education-10th{
+        width: 30%;
+        height: 23%;
+        margin-left: 18%;
+    }
+    .education-12th{
+        width: 30%;
+        height: 23%;
+    }
+    .skills-me-box1 {    
+     height: 20%;
+     margin-top: 7%;   
+     margin-left: 5%;
+    }
+    .skills-me-box2{     
+     height: 20%;
+     margin-top: 5%;
+     float: left;
+     margin-left: 5%;
+     overflow: auto;
+    }
+    .skills-logo{   
+     font-size: 38px;   
+    }
+    .logo-name{
+     font-size: 13px;
+    }
+    .logo-name-js{
+     font-size: 13px;
+    }
+    .logo-name-java{
+     font-size: 13px; 
+    }
+    .emailbox{
+     overflow:auto;
+     border: 2px solid rgb(8, 255, 239);  
+     width:70%;
+     height:60%;
+     margin-left:14.5%;
+     margin-top:7%;  
+    backdrop-filter: blur(10px);
+    }
+    .mail1 ,.mail2{
+     font-size: 23px; 
+    }
+    .mail1{
+        margin-top: 10%;  
+    }
+    .mail2{
+        margin-top:3%;
+    }
+    textarea{
+        font-size: 20px;    
+    }   
+}
+@media screen and (max-width:800px  ) {
+    .education-10th{
+        width: 32%;
+        height: 20%;
+        margin-left: 18%;
+    }
+    .education-12th{
+        width: 32%;
+        height: 20%;
+    }
+    .education-bca{
+        width: 67%;
+        height: 20%;
+        margin-top: 2%;
+        float: left;
+        margin-left: 18%;
+    }
+    .skills-me-box1 {
+        height: 18%;
+        margin-top: 10%; 
+    }
+    .skills-me-box2{
+        height: 18%;
+    }
+    .skills-logo{ 
+        font-size: 38px; 
+    }
+    .logo-name{
+       font-size: 13px;
+    }
+    .logo-name-js{
+        font-size: 13px;    
+    }
+    .logo-name-java{
+        font-size: 13px; 
+    }
+}
+
+@media screen and (max-width:750px  ) {
+.home-content h3{  font-size: 32px;
+     font-weight: 400;
+     font-size: 20px;
+     animation: slideBottom 1s ease forwards;
+     animation-delay: .3s;
+     opacity: 0;
+    }
+.home-content h1{
+     font-size: 36px;
+     font-weight: 600;
+     margin: -3px 0;
+     animation: slideTop 1s ease forwards;
+     animation-delay: .3s;
+     opacity: 0;
+    }
+.home-content p{
+     font-size: 12px;
+    }
+.image{      
+     margin-left: 8%;
+     margin-top: 3%;
+     float: left;   
+     width: 200px;
+     height: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+.about-me-photo{
+     width: 170px;
+     height: 170px;
+     border-radius:50%;
+     border: 2px solid  #0ef;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-style:dashed; 
+    
+    }
+.image-about-me{
+     width: 95%;
+     height: 95%;
+     border-radius:50%;  
+     border: 2px solid  #0ef;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+.about-me-h3{
+     color: rgba(255, 255, 255, 0.884);
+     margin-top: 4%;
+    }
+.about-me-info{
+     width: 80%;
+     height: 13%;
+     margin-top: 4%;
+    }
+.about-me-read-more{ 
+     width: 13%;
+     height: 7%; 
+     font-size: 15px;
+     color: #0ef;  
+     margin-top: 4%;
+     background:none;
+     border-color: #0ef;
+     border-radius: 10px;   
+    }
+
+.skills-me-box1 {
+     width: 42.3%;       
+     height: 20%;
+     margin-top: 5%;   
+    }
+.skills-me-box2{
+     width: 42.3%;       
+     height: 20%;
+     margin-top: 5%; 
+    }
+.skills-logo{ 
+     font-size: 38px;   
+    }
+.logo-name{
+     font-size: 13px;
+    }
+.logo-name-js{
+     font-size: 13px;
+    }
+.logo-name-java{  
+     font-size: 13px;
+    }
+}
+@media screen and (max-width:600px  ) {
+    .education-10th{
+        width: 37%;
+        height: 18%;
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+    .education-12th{
+        width: 37%;
+        height: 18%;
+        margin-top: 15%;
+    }
+    .education-bca{       
+        width: 67%;
+        height: 18%;
+        margin-top: 2%;        
+        margin-left: 17.5%;
+    }
+    .logo-10th ,.logo-12th{
+       font-size: 18px;
+    }
+    .logo-bca{
+        font-size: 20px;
+    }
+    .introduce-logo{
+        font-size: 25px;   
+    }
+    .logo-cal-p .bx-calendar-alt{                 
+        font-size: 20px;                
+    }
+    .logo-bca .bx-calendar-alt{                
+       font-size: 23px;
+    }
+    .introduce-month{
+        font-size:17px;   
+    }
+    .completed{
+        font-size:17px; 
+    }
+    .completed-BCA1{
+        font-size:19px; 
+    }
+    .introduce-info{
+       font-size: 14px;
+        
+    }
+    .introduce-info-BCA{
+        font-size:15px;                 
+    }
+    .introduce-month-BCA{
+        font-size: 20px;
+    }
+    .mail1 ,.mail2{
+        font-size: 23px; 
+        width: 40%;
+        margin-left:5%;
+        font-size: 20px;
+    }      
+    textarea{
+        font-size: 18px; 
+        margin-left: 5%;
+        width: 60%;   
+    }
+    .send{
+        width: 20%;
+        font-size: 18px;
+    }
+}
+ @media screen and (max-width:500px  ) {
+    .skills-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+        height:160vh;
+    }
+    .skills-logo{
+        margin-left: 0%;
+    }
+    .skills-me-box1 {
+        width: 70%;       
+        height: 13%;
+        margin-top: 5%;
+        margin-left: 0%;       
+    }
+    .skills-me-box2{
+        width: 70%;       
+        height: 13%;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .skills-logo{     
+        font-size: 38px;      
+    }  
+    .logo-name{     
+       font-size: 13px;
+          
+    }
+    .logo-name-js{     
+        font-size: 13px;     
+    }
+    .logo-name-java{      
+        font-size: 13px;     
+    }
+    .emailbox{
+        height: 70%;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mail1 ,.mail2{
+        font-size: 20px; 
+        width: 40%;
+        margin-left:0%;      
+        font-size: 20px;
+    }
+    .mail1{
+        margin-top:2%;
+        padding: 0;
+    }
+    .mail2{
+        margin-top: 1%;
+        padding: 0;
+    }      
+    textarea{
+        padding: 0;
+        font-size: 15px; 
+        margin-left: 0;
+        width: 60%; 
+        text-align: center;  
+    }
+    .send{
+        margin-top: 2%;
+        margin-left: 0;
+        font-size: 15px;
+        width: 18%;
+    }
+}
+@media screen and (max-width:425px  ) {
+    .moible{
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .first-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content{
+        color: aliceblue; 
+        margin-left: 5%;
+        margin-top: 5%;      
+        width: 90%;
+        height: 50%;
+        overflow: auto;
+    }
+    .home-content h1{
+        font-size: 30px;
+        font-weight: 500;
+        margin: -3px 0;   
+    } 
+    .image{
+        margin-left:26%;
+    }
+    .social-media a{
+        margin-left:0;    
+    }
+    .Download{
+        margin-left:0;
+       } 
+    .about-me-photo{
+        width: 150px;
+        height: 150px; 
+        margin-top: 5%; 
+    }
+    .about-me-h3{
+        margin-top: 5%;
+    }
+    .about-me-info{    
+        width: 80%;
+        height: 13%;
+        margin-top: 5%;
+    } 
+    .about-me-read-more{
+        width: 16%;
+        height: 6%; 
+        font-size: 11px;
+        font-weight: 500px;
+        color: #0ef;    
+        margin-top: 4%;
+        background:none;
+        border-color: #0ef;
+        border-radius: 10px;    
+    }
+    .education-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .education-10th{
+        width: 60%;
+        height: 17%;
+        margin-left:0%;
+        margin-top: 5%;
+    }
+    .education-12th{
+        width: 60%;
+        height: 17%;
+        margin-left:0%;
+        margin-top: 7%;
+    }
+    .education-bca{  
+        width: 70%;
+        height: 20%;
+        margin-left:0%;
+        margin-top: 7%;     
+    }
+    .skills-me-box1 {       
+        height: 11%;     
+    }
+    .skills-me-box2{          
+        height: 11%;    
+    }
+    .skills-logo{     
+        font-size: 35px;          
+    }  
+    .logo-name{      
+       font-size: 12px;         
+    }
+    .logo-name-js{     
+        font-size: 12px;      
+    }
+    .logo-name-java{  
+        font-size: 13px; 
+    }
+}
+@media screen and (max-width:369px  ) {
+    .image{
+        margin-left:22%;
+    }
+   .introduce-logo{
+    font-size: 23px;   
+    }
+    .mail1 ,.mail2{               
+        width: 60%;
+        margin-left:0%;
+        font-size: 20px;
+    }
+       .mail1{
+        margin-top:2%;
+        padding: 0;
+        font-size: 15px; 
+    }
+       .mail2{
+        margin-top: 1%;
+        padding: 0;
+        font-size: 15px; 
+    }     
+       textarea{
+        padding: 0;
+        font-size: 13px;         
+    }
+       .send{      
+        margin-top: 5%;
+        margin-left: 0;
+        font-size: 17px;
+        width: 36%;
+    }
+}
+@media screen and (max-width:334px  ) {
+    .image{      
+        margin-left: 23%;
+        margin-top: 3%;        
+        width: 170px;
+        height: 190px;     
+     }
+     .home-content h1{
+        font-size: 30px;
+        font-weight:400;  
+    } 
+    .about-me-photo{
+         width: 150px;
+         height: 150px;
+    }
+    .about-me-h3{
+        margin-top: 7%;
+    }
+    .about-me-info{
+        width: 80%;
+        height: 13%;
+        margin-top: 7%;
+    }
+   .about-me-read-more{
+      width: 20%;
+      height: 7%; 
+      font-size: 11px;
+      font-weight: 500px;
+      margin-top: 7%; 
+    }
+   .introduce-logo{
+      font-size: 22px;   
+    }
+   .send{                 
+      margin-top: 7%;
+      margin-left: 0;
+      font-size: 17px;
+      width: 35%;
+    }
+}
+@media screen and (max-width:320px  ) {
+    .first-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media{
+        margin-left: 0;
+    }
+    .education-10th{
+        width: 70%;
+        height: 17%;
+        margin-top: 10%;
+    }
+    .education-12th{
+        width: 70%;
+        height: 17%;
+        margin-top: 10%;
+    }
+    .education-bca{  
+        width: 80%;
+        height: 20%;
+        margin-top: 10%;       
+    }
+    .introduce-logo{
+        font-size: 20px;   
+    }
+    .skills-me-box1 {
+        width: 75%;
+        height: 12%;  
+    }
+    .skills-me-box2{
+        width: 75%;
+        height: 12%;  
+    }
+    .skills-logo{   
+        font-size: 35px;    
+    }
+    .logo-name{ 
+       font-size: 12px;    
+    }
+    .logo-name-js{    
+        font-size: 12px;    
+    }
+    .logo-name-java{    
+        font-size: 12px;   
+    }   
+} 
+@media screen and (max-width:310px  ) {
+    .image{      
+        width: 150px;
+        height: 170px;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+
+
+ 
