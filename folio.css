@@ -5,10 +5,13 @@
 body{
     background-color: rgb(30, 29, 29);
 }
+
 .first-page{ 
     width: 100%;
     height: 100vh;
+   
 }
+d
 .moible{
     display: flex;
     width: 100%;
@@ -78,6 +81,7 @@ body{
 }
 .social-media{
     margin-left: 3%;
+    width:fit-content;
 }
 .social-media a{   
     display: inline-flex;
@@ -86,7 +90,7 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #0ef; 
     border-radius: 50%;
     font-size: 20px;
     color: #0ef;
@@ -372,15 +376,31 @@ body{
 .read-more-btn{
     color: rgba(255, 255, 255, 0.658);
 }
-.contact-box{
-    position: absolute;
+.contact-box{ 
     width: 100%;
     height: 100vh;
     border-top:1px solid grey;
-    left: -100%;
+    display: none;  
 }
 .contact-box.active{
-    left: 0;
+    display: block;  
+}
+.close-box{
+    margin-left: 91%;
+    font-size: 40px;
+    position: relative; 
+}
+.close-box a{
+    width: fit-content;
+    display: inline-flex;
+    color: #0ef; 
+    transition: .5s ease;
+    background: transparent;
+    text-decoration: none;
+}
+.close-box a:hover{
+    color: rgba(0, 238, 255, 0.5);  
+    box-shadow: 0 0 20px #0ef;
 }
 .emailbox{
     overflow:auto;
@@ -388,7 +408,7 @@ body{
     width:60%;
     height:70%;
     margin-left:20%;
-    margin-top:5%;
+    margin-top:3%;
     background: none;
     backdrop-filter: blur(10px);
 }
@@ -406,7 +426,7 @@ body{
  border-bottom: 2px solid white;
 }
 .mail1{
-    margin-top: 10%; 
+    margin-top:5%; 
 }
 .mail2{
     margin-top:3%;
@@ -486,14 +506,18 @@ textarea::placeholder{
      width:70%;
      height:60%;
      margin-left:14.5%;
-     margin-top:7%;  
+     margin-top:5%;  
     backdrop-filter: blur(10px);
+    }
+    .close-box{
+        margin-left: 90%;
+        font-size: 35px;  
     }
     .mail1 ,.mail2{
      font-size: 23px; 
     }
     .mail1{
-        margin-top: 10%;  
+        margin-top:5%;  
     }
     .mail2{
         margin-top:3%;
@@ -537,6 +561,10 @@ textarea::placeholder{
     }
     .logo-name-java{
         font-size: 13px; 
+    }
+    .close-box{
+        margin-left: 89%;
+        font-size: 30px;  
     }
 }
 
@@ -684,6 +712,10 @@ textarea::placeholder{
     .introduce-month-BCA{
         font-size: 20px;
     }
+    .close-box{
+        margin-left: 87.5%;
+        font-size: 28px;  
+    }
     .mail1 ,.mail2{
         font-size: 23px; 
         width: 40%;
@@ -742,6 +774,10 @@ textarea::placeholder{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .close-box{
+        margin-left:68%;
+        font-size: 28px;  
     }
     .mail1 ,.mail2{
         font-size: 20px; 
@@ -868,6 +904,36 @@ textarea::placeholder{
     .logo-name-java{  
         font-size: 13px; 
     }
+    .emailbox{
+        margin-top: 5%;    
+    }
+    .mail1 ,.mail2{               
+        width: 70%;
+        margin-left:0%;
+        font-size: 19px;
+    }
+       .mail1{
+        margin-top:1%;
+        padding: 0;
+        font-size: 15px; 
+    }
+       .mail2{
+        margin-top: 0;
+        padding: 0;
+        font-size: 15px; 
+    }     
+       textarea{
+        padding: 0;
+        width: 70%;
+        text-align: start;
+        font-size: 13px;         
+    }
+       .send{      
+        margin-top: 5%;
+        margin-left: 0;
+        font-size: 17px;
+        width: 36%;
+    }
 }
 @media screen and (max-width:369px  ) {
     .image{
@@ -876,30 +942,38 @@ textarea::placeholder{
    .introduce-logo{
     font-size: 23px;   
     }
+    .emailbox{
+        margin-top: 2%;    
+    }
+    .close-box{      
+        margin-left:65%;
+        font-size: 25px;  
+    }
     .mail1 ,.mail2{               
-        width: 60%;
-        margin-left:0%;
-        font-size: 20px;
+        width: 65%;
+        margin-left:0;
+        font-size: 18px;
     }
        .mail1{
-        margin-top:2%;
+        margin-top:1%;
         padding: 0;
         font-size: 15px; 
     }
        .mail2{
-        margin-top: 1%;
         padding: 0;
         font-size: 15px; 
     }     
        textarea{
         padding: 0;
+        width: 65%;
+        text-align: start;
         font-size: 13px;         
     }
        .send{      
         margin-top: 5%;
         margin-left: 0;
-        font-size: 17px;
-        width: 36%;
+        font-size: 16px;
+        width: 35%;
     }
 }
 @media screen and (max-width:334px  ) {
@@ -935,11 +1009,16 @@ textarea::placeholder{
    .introduce-logo{
       font-size: 22px;   
     }
+    .mail1 ,.mail2{               
+        width: 68%;
+        font-size: 15px;
+    }
    .send{                 
       margin-top: 7%;
       margin-left: 0;
       font-size: 17px;
-      width: 35%;
+      height:8%;
+      width: 33%;
     }
 }
 @media screen and (max-width:320px  ) {
@@ -989,6 +1068,10 @@ textarea::placeholder{
     .logo-name-java{    
         font-size: 12px;   
     }   
+    .mail1 ,.mail2{               
+        width: 68%;
+        font-size: 15px;
+    }
 } 
 @media screen and (max-width:310px  ) {
     .image{      
