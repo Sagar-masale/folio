@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="folio.css">
      </head>
             <body>
+              <div class="navbar-box">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
     
@@ -46,6 +47,30 @@
          </div>
           </div>
        </nav>
+      </div>
+      <div class="contact-box" id="contact-links">
+        <h2 class="education-logo">Contact us...</h2>
+        <div class="emailbox"> <br>
+         <span class="close-box" > <a href="#" ><i class='bx bx-x'></i></a></span> <br>
+          <input class="mail1" type="text" id="First name" placeholder="First name" required>
+          <input class="mail1" type="text" id="Last name" placeholder="Last name" required><br>
+          <input class="mail2" type="email" id="Email id" placeholder="Email id" required>
+          <input class="mail2" type="text" id="Mobile no" placeholder="Mobile" required>
+         
+          <textarea required placeholder="Type your message here.."></textarea>
+          <input type="submit" value="send" id="button" class="send">
+  
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+       
            <!-- first page -->
         <div class="first-page">
           <div class="moible">
@@ -110,23 +135,12 @@
            </div>
            <!-- forth page skills close -->
             <!-- fifth page Contact -->
-            <div class="contact-box" id="contact-links">
-              <h2 class="education-logo">Contact us...</h2>
-              <div class="emailbox">
-                
-                <input class="mail1" type="text" id="First name" placeholder="First name" required>
-                <input class="mail1" type="text" id="Last name" placeholder="Last name" required><br>
-                <input class="mail2" type="email" id="Email id" placeholder="Email id" required>
-                <input class="mail2" type="text" id="Mobile no" placeholder="Mobile" required>
-               
-                <textarea required placeholder="Type your message here.."></textarea>
-                <input type="submit" value="send" id="button" class="send">
-        
-            </div>
-            </div>
+           
             <script>
               const toggleButton=document.getElementById('contact-toggle');
               const contactbox=document.getElementById('contact-links');
+              
+              
               toggleButton.addEventListener('click', () =>{
                 contactbox.classList.toggle('active');
               } )
