@@ -10,14 +10,15 @@
             margin: 0;
             padding: 0;
         }
-        .front-box{
-           
-            width: 100%;
-            height: 130vh;
-            
-            
+        body{
+            background-color: rgb(30, 29, 29);
         }
-        
+        .front-box{
+            animation: slideRight 1s ease forwards;
+            width: 100%;
+            height: 130vh;  
+            overflow: auto;         
+        }  
         .more-info-html{
            
             display: flex;
@@ -28,42 +29,62 @@
             height: 30vh;
         }
         h2{
-            text-align: center;
-           
+            text-align: center;  
+            color: rgba(201, 197, 197, 0.795);
+            margin-top: 3%;
         }
         .html-logo{
-            color: rgb(255, 106, 0);
+            color: rgb(255, 55, 0);
             font-size: 80px;
             margin-top: 20px;
-         
         }
         .logo-box{
             width: 100px;
             height: 100px;
-            border: 2px solid rgb(255, 0, 0);
+            margin-top: 5%;
+            background-color: rgba(255, 250, 250, 0.949);
+            border: 2px solid rgba(0, 0, 0, 0.734);
+            box-shadow: 0 0 20px rgba(214, 214, 214, 0.925);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .more-info-start{
+        .info-point{
+            text-decoration: underline;
+            margin-bottom: 20px;
             
+        }
+        .more-info-start{
+            color: rgba(201, 197, 197, 0.795);
             margin-left: 5%;
+            margin-top: 3%;
             width: 80%;
             height: 80vh;
         }
-       
-      
         .more-info-start{
             text-align: start;
         }
         .Back{
-            color: black;
+            color: rgb(201, 197, 197);
+            
         }
+        .Back:hover{
+            color: rgba(255, 255, 255, 0.142);    
+        }
+        @keyframes slideRight {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
         @media screen and (max-width:768px  ) {
             .more-info-html{
             justify-content:start;
-            
             flex-direction:row;
             width: 100%;
             height: 20vh;
@@ -86,8 +107,7 @@
             font-size: 18px;
         }
     }
-    @media screen and (max-width:530px  ) {
-           
+    @media screen and (max-width:530px  ) { 
         .logo-box{
             width:60px;
             height: 60px;
@@ -109,60 +129,63 @@
         }
     }
     @media screen and (max-width:380px  ) {
-           
            .logo-box{
                width:55px;
                height:50px;
                margin-left: 1%;
-           }
+            }
            .html-logo{
                font-size: 38px;
                margin-top: 13px;
-           }
+            }
            h2{
             font-weight:800;
                font-size: 18px;
                margin-left: 1%;
                margin-top: 4%;
-           }
+            }
            .info-point{
                font-size: 15px;
-           }
+            }
            p{
                font-size: 14px;
-           }
+            }
        }
        @media screen and (max-width:325px  ) {
-           
            .logo-box{
                width:55px;
                height:48px;
                margin-left: 1%;
-           }
+            }
            .html-logo{
                font-size: 38px;
                margin-top: 13px;
-           }
+            }
            h2{
                font-size: 17px;
                margin-left:3px;
                margin-top: 4%;
-           }
+            }
            .info-point{
                font-size: 15px;
            }
            p{
                font-size: 14px;
-           }
+            }
+            h4{
+                margin-top: -25px
+            }
+            .front-box{
+                height: fit-content;
+            }
        }
     </style>
 </head>
 <body>
+   
     <div class="front-box">
     <div class="more-info-html">
        <div class="logo-box"> <span class="html-logo"><i class='bx bxl-html5'></i></span></div>
-    
-    
         <h2>Here are some key aspects of my HTML expertise:</h2><br>
     </div>
         <div class="more-info-start">
@@ -176,9 +199,10 @@
                         <h3 class="info-point">*4..Integration with CSS: </h3><p> While my primary expertise lies in HTML, I possess a basic understanding of CSS (Cascading Style Sheets). I can apply CSS styles to 
                             HTML elements to enhance the visual presentation of web pages, ensuring consistency and aesthetics.</p><br><br>
                             <h4>#..By leveraging these HTML skills, I can contribute to the development of user-friendly, well-structured, and visually appealing websites.</h4><br>
-                            <a class="Back" href="index.html">Back to home page</a>
+                            <a class="Back" href="portfolio.html">Back to home page</a>
                         </div>
     
 </div>
+
 </body>
 </html>
