@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <style>
+        @keyframes slideRight {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        .first-box{
+            display: flex;
+            animation: slideRight 1s ease forwards;
+            
+            width: 100%;
+            height:100vh;
+            background-image: url(guitar1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .second-box{
+            display: flex;
+           
+           
+           width: 100%;
+           height:100vh;
+           background-image: url(black.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: right;
+        }
+        .info-box{
+            position: absolute;
+            width: 70%;
+            height: 80%;
+            overflow: auto;
+            left: 14.5%;
+            top: 11%;
+            background-color: rgba(0, 0, 0, 0.579);
+            box-shadow: 0 0 30px rgba(173, 173, 173, 0.586);
+            
+        }
+        .info-box2{
+            width: 70%;
+            height: 80%;
+            overflow: auto;
+            top: 116%;
+            left: 15%;
+            position: absolute;
+            
+            
+            box-shadow: 0 0 30px rgba(173, 173, 173, 0.586);
+            
+        }
+        .logo{
+            
+            filter:drop-shadow( 0 0 20px rgb(222, 0, 0))
+        }
+     
+        .logo-name{
+            color:rgba(255, 255, 255, 0.903) ;
+            text-decoration: underline;
+            margin-left: 3%;
+        }
+        .heading{
+            color:rgb(255, 255, 255) ;
+            background-color: rgba(0, 0, 0, 0.132);
+            margin-left: 3%;
+            margin-top: 2%;
+            font-size: 20px;
+        }
+        .lite{
+            text-decoration: underline rgba(255, 255, 255, 0.512);
+        }
+        ul li,p{
+            color:rgb(255, 255, 255) ;
+            margin-left:0%;
+            text-align: start;
+            
+        }
+        ul li{
+            font-size: 15px;
+        }
+        .hobby-logo{
+           
+            margin-left: 2%;
+        }
+        .close{
+            position: absolute;
+            filter:drop-shadow( 0 0 20px rgb(222, 0, 0));
+            left: 94%;
+            top: 7%;
+            font-size: 30px;
+        }
+        .close .bx-x:hover{
+            background-color: red;
+            color: white;
+        } 
+        .bx-x{
+            color: rgb(255, 255, 255);
+            border: 2px solid red;
+
+        }
+        @media screen and (max-width:991px  ) {
+        .info-box{
+            width: 84%;
+            height: 80%;
+            left: 8.5%;
+            top: 12%;
+        }
+        }
+        @media screen and (max-width:375px  ) {
+            .close{
+            left: 90%;
+            top: 6%;
+            font-size: 20px;
+        }
+        }
+        @media screen and (max-width:375px  ) {
+            ul li{
+            font-size: 13px;
+        }
+        .logo-name{
+            font-size:20px;
+        }
+
+        }
+        .heading{
+            font-size: 16px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="first-box">
+        <span class="close" > <a href="index.html" ><i class='bx bx-x'></i></a></span>
+        <span class="hobby-logo"> <h1 class="logo-name">Hobbies</h1></span>
+        <div class="info-box">
+            <span class="logo"> <h1 class="logo-name">Guitar</h1></span>
+         <h2 class="heading">
+             # Hello! My name is Sagar , and I am passionate about playing
+             the guitar. For me, the guitar is not just an instrument—it's a way
+             to express my creativity, connect with others, and immerse myself in the beautiful world of music.
+         </h2>
+         <ul>
+            <li>
+                I have been playing the guitar for <span class="lite">[3 years]</span> and have developed a deep love and appreciation for 
+                its versatility and power to evoke emotions. Whether it's strumming gentle melodies on an acoustic 
+                guitar or unleashing electrifying solos on an electric guitar, I find joy in exploring the vast spectrum 
+                of sounds and styles that this instrument offers.
+            </li><br/>
+            <li>
+                Playing the guitar has become an integral part of my life. It allows me to transcend boundaries and communicate
+                through the universal language of music. I am continuously inspired by the legendary guitarists who have shaped
+                the landscape of music, and I strive to channel their influence while developing my own unique style.
+            </li><br/>
+            <li>
+                Throughout my guitar journey, I have had the opportunity to perform in various settings, including These experiences 
+                have not only allowed me to share my music with others but also taught me valuable lessons about stage presence, teamwork, 
+                and adapting to different audiences.
+            </li><br/>
+            <li>
+                Playing the guitar has not only honed my musical abilities but has also taught me valuable skills such as discipline, perseverance, 
+                and patience. It has been a journey of continuous learning and growth, as I constantly seek to expand my repertoire, improve my technique, 
+                and discover new ways to express myself through this wonderful instrument.
+            </li>
+            <p>
+                ^ Thank you for taking the time to get to know me and my guitar-playing hobby. Let's embark on this musical adventure together!
+            </p>
+         </ul>
+        </div>
+    </div>
+    <div class="second-box">
+        
+        
+        <div class="info-box2">
+            <span class="logo"> <h1 class="logo-name">Flute</h1></span>
+         <h2 class="heading">
+             # Allow me to introduce you to the wonderful world of playing the flute! Playing the flute is a passion and hobby that brings me immense joy, 
+             and I'm excited to share my enthusiasm with you.
+         </h2>
+         <ul>
+            <li>
+                When I pick up my flute, I'm transported to a world of melodies and emotions. It's a thrilling feeling to be able to express myself through the 
+                instrument's enchanting sound. From gentle, lyrical lines to lively, energetic passages, the flute allows me to convey a wide range of emotions 
+                and tell stories through music.
+
+            </li><br/>
+            <li>
+                The process of learning and mastering the flute has been a rewarding and fulfilling journey for me. It has taught me patience, discipline, and 
+                perseverance. Through regular practice, I have developed technical skills, honed my breath control, and improved my musical interpretation. Every 
+                day brings new opportunities for growth and exploration, and I'm constantly discovering new ways to express myself through my flute playing
+
+            </li><br/>
+            <li>
+                Moreover, playing the flute has numerous benefits beyond the pure enjoyment of music-making. It helps improve my concentration, focus, and coordination. 
+                It enhances my lung capacity and respiratory health, contributing to overall well-being. The flute provides a creative outlet, allowing me to relieve stress, 
+                express my emotions, and find solace in the power of music.
+            </li><br/>
+            <li>
+                In summary, playing the flute is a passion that brings me happiness, fulfillment, and a sense of purpose. It's a journey of self-expression, growth, and connection. 
+                If you have a love for music and an interest in exploring a captivating instrument, I encourage you to pick up the flute and embark on this magical musical adventure. 
+                You'll discover a world of melodies, emotions, and personal growth that will enrich your life in countless ways
+            </li>
+            <p>
+                ^ Thank you for taking the time to get to know me and my Flute-playing hobby. Let's embark on this musical adventure together!
+            </p>
+         </ul>
+        </div>
+
+    </div>
+</body>
+</html>
