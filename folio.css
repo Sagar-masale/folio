@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +11,27 @@
 body{
     background-color: rgb(30, 29, 29);
 }
+.navbar-box{
+    animation: slideBottom 1.5s ease forwards;
+}
 
 .first-page{ 
     width: 100%;
-    height: 100vh;
-   
+    height: 100vh; 
+    background-image: url(black.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
-d
 .moible{
-    display: flex;
     width: 100%;
     height: 60vh;
+    display: flex;
 }
 .home-content{
+    
     color: aliceblue;  
     margin-left: 3%;
     margin-top: 5%;
@@ -27,16 +41,18 @@ d
     overflow: auto;
 }
 
-.image{
-    margin-left: 12%;
-    margin-top: 10%;
-    float: left;   
-    width: 25%;
-    height: 60%;
+.image{   
+    width:60%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 1s ease forwards;
 }
 .imageme{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    filter:drop-shadow( 0 0 20px rgb(74, 74, 74))
 }
 .home-content h3{  
     font-size: 30px;
@@ -44,6 +60,7 @@ d
     animation: slideBottom 1s ease forwards;
     animation-delay: .3s;
     opacity: 0;
+    font-family: 'Kanit', sans-serif;
 }
 .home-content h3 :nth-of-type(2){
     margin-bottom: 30px;
@@ -55,33 +72,32 @@ d
     font-size: 40px;
     font-weight: 700;
     margin: -3px 0;
-    animation: slideTop 1s ease forwards;
+    animation: in 1s ease forwards;
     animation-delay: .3s;
     opacity: 0;
+    font-family: 'Karla', sans-serif;
 } 
 .home-content p{
     font-size: 16px;
+    font-family: 'Crimson Text', serif;
 }
-.image{   
-    margin-left: 12%;
-    margin-top: 5%;
-    float: left;   
-    width: 250px;
-    height: 270px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imageme{
-    width: 100%;
-    height: 100%;     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .social-media{
     margin-left: 3%;
     width:fit-content;
+    
+}
+.bxl-facebook{
+    animation: slideRight 1s ease forwards;
+}
+.bxl-twitter{
+    animation: slideRight 1.2s ease forwards;
+}
+.bxl-instagram-alt{
+    animation: slideRight 1.4s ease forwards;
+}
+.bxl-linkedin{
+    animation: slideRight 1.6s ease forwards;
 }
 .social-media a{   
     display: inline-flex;
@@ -108,18 +124,21 @@ d
     margin-left: 3%;
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    color: #0ef;
     border-radius: 40px;
     box-shadow: 0 0 10px #0ef;
     font-size: 16px;
-    color: #000000;
+    font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    transition: .5s ease;
 }
 .Download:hover{
-    color: #00000065;
-    transition: .4s ease;
+    background: #0ef;
+    color: #1f242d;
+    font-weight: 1200;
+    box-shadow: 0 0 20px #0ef;
 }
 
 /* KEYFRAMES ANIMATION */
@@ -155,23 +174,54 @@ d
         opacity: 1;
     }
 }
+@keyframes slideIn {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .about-me{
     width: 100%;
-    height: 100vh;
-    border-top:1px solid grey;
+    height: 110vh;
     display: flex;
     align-items: center;
     flex-direction: column; 
-       
+    border: 2px solid rgb(65, 65, 65);
+    display: none;  
 }
-
+.about-me.active{
+   display:flex;
+}
+.close-about-box{
+    margin-left: 92%;
+    margin-top: 1%;
+    font-size: 40px;
+    position: relative; 
+}
+.close-about-box a{
+    width: fit-content;
+    display: inline-flex;
+    color: #0ef; 
+    transition: .5s ease;
+    background: transparent;
+    text-decoration: none;
+}
+.close-about-box a:hover {
+    color: rgba(0, 238, 255, 0.5);  
+    box-shadow: 0 0 20px #0ef;
+}
 .about-h1{
     color: white;
     text-align: center;
     padding: 1%;
     display: flex;
     animation: slideRight 1s ease forwards;
-    animation-delay: .2s;
+    font-family: 'Playfair', serif;
 }
 .me-h1{
     color: #0ef;
@@ -199,14 +249,14 @@ d
 }
 .about-me-h3{
     color: rgba(255, 255, 255, 0.884);
-    margin-top: 4%;
+    margin-top: 3%;
     animation: slideRight 2.2s ease forwards;
     animation-delay: .2s;
 }
 .about-me-info{    
     width: 69%;
     height: 12%;
-    margin-top: 4%;
+    margin-top: 3%;
     overflow:auto;    
     text-align: center;
 }
@@ -222,15 +272,39 @@ d
 }
 .about-me-info1{
     color: white;
+    font-family: 'Open Sans', sans-serif;
   
 }
 .education-me{
     width: 100%;
     height: 100vh;
-    border-top:1px solid grey;
+    border: 2px solid rgb(65, 65, 65);
+    display: none;  
+    animation: slideBottom 1.5s ease forwards;
 }
+.education-me.active{
+   display: block;
+}
+.close-education-box, .close-skills-box{
+    margin-left: 93%;
+    font-size: 40px;
+    position: relative; 
+}
+.close-education-box a, .close-skills-box a{
+    width: fit-content;
+    display: inline-flex;
+    color: #0ef; 
+    transition: .5s ease;
+    background: transparent;
+    text-decoration: none;
+}
+.close-education-box a:hover, .close-skills-box a:hover {
+    color: rgba(0, 238, 255, 0.5);  
+    box-shadow: 0 0 20px #0ef;
+}
+
 .education-logo{
-    margin-top: 2%;
+    margin-top:0;
     color: white;
     margin-left:3%;  
     width:fit-content;
@@ -247,34 +321,40 @@ d
     animation-delay: .3s;   
 }
 .education-10th{
-    border: 1px solid rgba(152, 152, 152, 0.682);
+    border-bottom: .5px solid rgba(152, 152, 152, 0.682);
     width: 35%;
     height: 30%;
     margin-top: 3%;
     float: left;
     margin-left: 13.5%;
     overflow: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .education-12th{
-    border: 1px solid rgba(152, 152, 152, 0.682);
+    border-bottom: .5px solid rgba(152, 152, 152, 0.682);
     width: 35%;
     height: 30%;
     margin-top: 3%;
     float: left;
     margin-left: 3%;
     overflow: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .introduce-month{
     color: rgba(255, 255, 255, 0.967);
+    font-family: 'Libre Baskerville', serif;
+    font-size:20px; 
 }
 .education-bca{
-    border: 2px solid rgba(152, 152, 152, 0.682);
+    border-bottom: .5px solid rgba(152, 152, 152, 0.682);
     width: 63%;
     height: 25%;
-    margin-top: 2%;
+    text-align: center;
+    margin-top: 5%;
     float: left;
     margin-left: 18.5%;
     overflow: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .logo-cal-p .bx-calendar-alt{
     color:rgba(240, 248, 255, 0.758) ;
@@ -291,8 +371,10 @@ d
    margin-left: 1.5%;
    margin-top:1%;
 }
-.introduce-month{
-    font-size:20px;   
+.introduce-month-BCA{
+    font-size:20px;  
+   
+    font-family: 'Libre Baskerville', serif;
 }
 .completed{
     color: aliceblue;
@@ -314,8 +396,9 @@ d
 .introduce-info-BCA{
     font-size:15px;
     margin-left: 3%;
+    margin-top: 2%;
     color: aliceblue;
-    text-align:start;
+    text-align: center;
     word-spacing: 1px; 
 }
 .introduce-month-BCA{
@@ -327,7 +410,12 @@ d
 .skills-me{
     width: 100%;
     height: 100vh;
-    border-top:1px solid grey;
+    border: 2px solid rgb(65, 65, 65);
+    display: none;
+    animation: slideBottom 1s ease forwards;  
+}
+.skills-me.active{
+    display: block;
 }
 .skills-me-box1 {
     border:2px solid grey;
@@ -379,16 +467,21 @@ d
 .contact-box{ 
     width: 100%;
     height: 100vh;
-    border-top:1px solid grey;
-    display: none;  
+    border: 2px solid rgb(65, 65, 65);
+    display: none; 
+    animation: slideBottom 1s ease forwards;   
 }
 .contact-box.active{
     display: block;  
 }
+
 .close-box{
     margin-left: 91%;
     font-size: 40px;
     position: relative; 
+}
+.bx-x{
+    cursor: auto;
 }
 .close-box a{
     width: fit-content;
@@ -404,7 +497,7 @@ d
 }
 .emailbox{
     overflow:auto;
-    border: 2px solid rgb(8, 255, 239);
+    border: 1px solid rgb(8, 255, 239);
     width:60%;
     height:70%;
     margin-left:20%;
@@ -423,7 +516,7 @@ d
  font-size: 25px;
  font-weight: 500px;
  background:none;
- border-bottom: 2px solid white;
+ border-bottom: 1px solid white;
 }
 .mail1{
     margin-top:5%; 
@@ -452,10 +545,14 @@ textarea{
     margin-left: 3%;
     color: rgba(240, 248, 255, 0.792);
     width:15%;
-    height: 10%; 
+    height: 7vh; 
     background:none;
     border-color: rgb(0, 242, 255);
     border-radius: 20px;
+}
+.send:hover{
+    color: rgba(0, 238, 255, 0.5);  
+    box-shadow: 0 0 20px #0ef;
 }
 .mail1 .mail2::placeholder{
     color: rgba(240, 248, 255, 0.748);
@@ -467,14 +564,23 @@ textarea::placeholder{
 
 
 @media screen and (max-width:991px  ) {
+    .close-about-box{
+        margin-left:88%;
+        margin-top: 3%;
+        font-size: 37px;  
+    }
     .education-10th{
-        width: 30%;
+        width: 38%;
         height: 23%;
-        margin-left: 18%;
+        margin-left: 12%;
     }
     .education-12th{
-        width: 30%;
+        width: 38%;
         height: 23%;
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 92%;
+        font-size: 38px;
     }
     .skills-me-box1 {    
      height: 20%;
@@ -527,21 +633,36 @@ textarea::placeholder{
     }   
 }
 @media screen and (max-width:800px  ) {
+    .close-about-box{
+        margin-left:88%;
+        margin-top: 3%;
+        font-size: 35px;  
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 90%;
+        font-size: 38px;
+    }
     .education-10th{
-        width: 32%;
+        width: 35%;
         height: 20%;
-        margin-left: 18%;
+        margin-left: 13%;
     }
     .education-12th{
-        width: 32%;
+        width: 35%;
         height: 20%;
     }
     .education-bca{
         width: 67%;
         height: 20%;
-        margin-top: 2%;
+        margin-top: 5%;
         float: left;
-        margin-left: 18%;
+        margin-left: 16%;
+    }
+    .completed-BCA1{
+        margin-top: 4%;
+    }
+    .introduce-info-BCA{
+        margin-top: 4%;
     }
     .skills-me-box1 {
         height: 18%;
@@ -587,16 +708,7 @@ textarea::placeholder{
 .home-content p{
      font-size: 12px;
     }
-.image{      
-     margin-left: 8%;
-     margin-top: 3%;
-     float: left;   
-     width: 200px;
-     height: 220px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    }
+
 .about-me-photo{
      width: 170px;
      height: 170px;
@@ -661,6 +773,15 @@ textarea::placeholder{
     }
 }
 @media screen and (max-width:600px  ) {
+    .close-about-box{
+        margin-left:86%;
+        margin-top: 3%;
+        font-size: 33px;  
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 87%;
+        font-size: 34px;
+    }
     .education-10th{
         width: 37%;
         height: 18%;
@@ -733,11 +854,27 @@ textarea::placeholder{
     }
 }
  @media screen and (max-width:500px  ) {
+    .image{
+        width:70%;
+    }
+    .close-about-box{
+        margin-left:86%;
+        margin-top: 3%;
+        font-size: 30px;  
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 86%;
+        font-size: 33px;
+    }
     .skills-me{
         display: flex;
         flex-direction: column;
         align-items: center;     
         height:160vh;
+        display: none;
+    }
+    .skills-me.active{
+        display: flex;
     }
     .skills-logo{
         margin-left: 0%;
@@ -769,10 +906,9 @@ textarea::placeholder{
     }
     .emailbox{
         height: 70%;
-        margin-top: 15%;
+        margin-top: 10%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .close-box{
@@ -780,39 +916,57 @@ textarea::placeholder{
         font-size: 28px;  
     }
     .mail1 ,.mail2{
-        font-size: 20px; 
-        width: 40%;
-        margin-left:0%;      
+        font-size: 18px; 
+        width:95%;
+        height: 5vh;
+        display: flex;
+        padding: 1%;
         font-size: 20px;
     }
     .mail1{
-        margin-top:2%;
-        padding: 0;
+        margin-top:5%;  
+    }
+    .fname{
+        margin-top: -10px;
+        margin-bottom: 21px;
+    }
+    .email-me{
+        margin-top: -1px;
+        margin-bottom: 13px;
+    }
+    .no{
+        margin-top: 22px;
     }
     .mail2{
-        margin-top: 1%;
-        padding: 0;
+        margin-top: 0;
     }      
     textarea{
-        padding: 0;
+        padding:1%;
         font-size: 15px; 
-        margin-left: 0;
-        width: 60%; 
-        text-align: center;  
+        margin-top: 7%;
+        width: 95%; 
+        text-align: start;  
     }
     .send{
-        margin-top: 2%;
-        margin-left: 0;
+        margin-top: 10%;
+        margin-left: 32%;
+        width: 32%;
+        height: 17%;
         font-size: 15px;
-        width: 18%;
+        
     }
 }
 @media screen and (max-width:425px  ) {
     .moible{
        display: flex;
        flex-direction: column-reverse;
+       height: 71vh;
+    }
+    .Download{
+        margin-left: 0;
     }
     .first-page{
+        height: 105%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -820,7 +974,7 @@ textarea::placeholder{
     .home-content{
         color: aliceblue; 
         margin-left: 5%;
-        margin-top: 5%;      
+        margin-top: 2%;      
         width: 90%;
         height: 50%;
         overflow: auto;
@@ -830,15 +984,16 @@ textarea::placeholder{
         font-weight: 500;
         margin: -3px 0;   
     } 
-    .image{
-        margin-left:26%;
+    .image{   
+        width:100%;    
     }
-    .social-media a{
-        margin-left:0;    
+    .imageme{
+        width: 100%;
+        height: fit-content;
+        
     }
-    .Download{
-        margin-left:0;
-       } 
+    
+    
     .about-me-photo{
         width: 150px;
         height: 150px; 
@@ -867,24 +1022,32 @@ textarea::placeholder{
         display: flex;
         flex-direction: column;
         align-items: center;
+        display: none;
+    }
+    .education-me.active{
+        display: flex;
     }
     .education-10th{
-        width: 60%;
+        width: 80%;
         height: 17%;
         margin-left:0%;
         margin-top: 5%;
     }
     .education-12th{
-        width: 60%;
+        width: 80%;
         height: 17%;
         margin-left:0%;
         margin-top: 7%;
     }
     .education-bca{  
-        width: 70%;
+        width: 80%;
         height: 20%;
         margin-left:0%;
-        margin-top: 7%;     
+        margin-top: 7%; 
+        text-align: start;    
+    }
+    .introduce-info-BCA{
+        text-align: start;
     }
     .skills-me-box1 {       
         height: 11%;     
@@ -905,88 +1068,115 @@ textarea::placeholder{
         font-size: 13px; 
     }
     .emailbox{
-        margin-top: 5%;    
+        margin-top: 11%;    
     }
     .mail1 ,.mail2{               
-        width: 70%;
-        margin-left:0%;
+        width: 50vw;
+        height: 8vh;
+        margin-left: 9%;
         font-size: 19px;
     }
-       .mail1{
-        margin-top:1%;
-        padding: 0;
-        font-size: 15px; 
+    .fname{
+        margin-bottom: -17px;
     }
-       .mail2{
-        margin-top: 0;
-        padding: 0;
-        font-size: 15px; 
+    .email-me{
+        margin-bottom: -4px;
+    }
+       .mail1{
+        font-size: 19px;
+        
+    }
+    .email-me{
+        margin-top: -8%;
+    }
+       .mail2{ 
+        font-size: 19px;
     }     
        textarea{
-        padding: 0;
-        width: 70%;
+        margin-left: 9%;
+        margin-top: 12px;
+        width: 50vw;
+        height: 8vh;
         text-align: start;
         font-size: 13px;         
     }
        .send{      
         margin-top: 5%;
-        margin-left: 0;
+        margin-left: 33%;
         font-size: 17px;
-        width: 36%;
+        width: 22vw;
+        height: 47px;
     }
 }
 @media screen and (max-width:369px  ) {
-    .image{
-        margin-left:22%;
+    .close-about-box{
+        margin-left:86%;
+        margin-top: 3%;
+        font-size: 27px;  
     }
+    .close-education-box, .close-skills-box{
+        margin-left: 84%;
+        font-size: 31px;
+    }
+    .home-content{
+        height:fit-content;
+    }
+    .home-content h1 {
+        font-size: 38px;
+        font-weight: 400;
+    }
+    .moible{
+        
+        margin-bottom: -2px;
+        height: 45%;
+    }
+  
    .introduce-logo{
     font-size: 23px;   
     }
     .emailbox{
-        margin-top: 2%;    
+        margin-top: 8%;    
     }
     .close-box{      
         margin-left:65%;
         font-size: 25px;  
     }
     .mail1 ,.mail2{               
-        width: 65%;
-        margin-left:0;
-        font-size: 18px;
+       font-size: 21px;
     }
-       .mail1{
-        margin-top:1%;
-        padding: 0;
-        font-size: 15px; 
+    .email-me{
+        margin-top: -26px
     }
-       .mail2{
-        padding: 0;
-        font-size: 15px; 
-    }     
-       textarea{
-        padding: 0;
-        width: 65%;
-        text-align: start;
-        font-size: 13px;         
-    }
-       .send{      
+    .education-10th{
+        width: 80%;
+        height: 17%;
+        margin-left:0%;
         margin-top: 5%;
-        margin-left: 0;
-        font-size: 16px;
-        width: 35%;
+    }
+    .education-12th{
+        width: 80%; 
+    }
+    .education-bca{  
+        width: 80%;  
     }
 }
 @media screen and (max-width:334px  ) {
-    .image{      
-        margin-left: 23%;
-        margin-top: 3%;        
-        width: 170px;
-        height: 190px;     
-     }
-     .home-content h1{
+    .home-content h1 {
+        font-size: 38px;
+        font-weight: 400;
+    }
+    .moible{
+       height: 40%;
+    }
+     .close-about-box{
+        margin-left:82%;
+        margin-top: 3%;
+        font-size: 25px;  
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 83%;
         font-size: 30px;
-        font-weight:400;  
-    } 
+    }
     .about-me-photo{
          width: 150px;
          height: 150px;
@@ -1009,17 +1199,15 @@ textarea::placeholder{
    .introduce-logo{
       font-size: 22px;   
     }
+    .emailbox{
+        margin-top: 5%;
+    }
     .mail1 ,.mail2{               
-        width: 68%;
-        font-size: 15px;
-    }
-   .send{                 
-      margin-top: 7%;
-      margin-left: 0;
-      font-size: 17px;
-      height:8%;
-      width: 33%;
-    }
+        font-size: 19px;
+     }
+     .send{
+        margin-left: 35%;
+     }
 }
 @media screen and (max-width:320px  ) {
     .first-page{
@@ -1027,13 +1215,21 @@ textarea::placeholder{
         flex-direction: column;
         align-items: center;
     }
+    .home-content h1 {
+        font-size: 34px;
+        font-weight: 400;
+    }
     .social-media{
         margin-left: 0;
+    }
+    .close-education-box, .close-skills-box{
+        margin-left: 82%;
+        font-size: 27px;
     }
     .education-10th{
         width: 70%;
         height: 17%;
-        margin-top: 10%;
+        margin-top: 3%;
     }
     .education-12th{
         width: 70%;
@@ -1046,7 +1242,8 @@ textarea::placeholder{
         margin-top: 10%;       
     }
     .introduce-logo{
-        font-size: 20px;   
+        font-size: 20px;  
+        margin-top: 3%; 
     }
     .skills-me-box1 {
         width: 75%;
@@ -1073,14 +1270,7 @@ textarea::placeholder{
         font-size: 15px;
     }
 } 
-@media screen and (max-width:310px  ) {
-    .image{      
-        width: 150px;
-        height: 170px;
-        align-items: center;
-        justify-content: center;
-    }  
-}
+
 
 
  
