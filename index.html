@@ -23,127 +23,162 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="#">Home</a>
+          <a class="nav-link active " aria-current="page" href="#" >Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#" id="about-toggle">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"  id="contact-toggle">Contact </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Education</a></li>
-            <li><a class="dropdown-item" href="#">Skills</a></li>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="#"  id="education-toggle" >Education</a></li>
+            <li><a class="dropdown-item" href="#"  id="skills-toggle">Skills</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" id="contact-toggle">Contact me</a></li>
+            
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled" >Disabled</a>
         </li>
           </ul>
-         
          </div>
           </div>
        </nav>
       </div>
-      <div class="contact-box" id="contact-links">
+      <!-- fifth page Contact -->
+      <div class="contact-box " id="contact-links">
         <h2 class="education-logo">Contact us...</h2>
+        
         <div class="emailbox"> <br>
-         <span class="close-box" > <a href="#" ><i class='bx bx-x'></i></a></span> <br>
-          <input class="mail1" type="text" id="First name" placeholder="First name" required>
-          <input class="mail1" type="text" id="Last name" placeholder="Last name" required><br>
-          <input class="mail2" type="email" id="Email id" placeholder="Email id" required>
-          <input class="mail2" type="text" id="Mobile no" placeholder="Mobile" required>
-         
-          <textarea required placeholder="Type your message here.."></textarea>
-          <input type="submit" value="send" id="button" class="send">
-  
+          <span class="close-box" > <a href="#" id="contact-toggle-close" ><i class='bx bx-x'></i></a></span> <br>
+          <form action="https://formspree.io/f/xyyarbvd"  method="POST" >
+          <input class="mail1 fname" type="text"  id="username" placeholder="First name" required autocomplete="off"/>
+          <input class="mail1" type="text" id="Last name" placeholder="Last name" required  autocomplete="off"/><br>
+          <input class="mail2 email-me" type="email" id="Email id" name="email" placeholder="Email id" required  autocomplete="off"/>
+          <input class="mail2 no" type="text" id="Mobile no"  placeholder="Mobile" required  autocomplete="off"/>
+          <textarea name="message" placeholder="Type your message here.."  autocomplete="off" required min="5"></textarea>
+          <button type="submit" id="submit" class="send" required  autocomplete="off"  >send</button>
+        </form>
       </div>
       </div>
+        <!-- fifth page Contact close -->
+ <!-- second page about me -->
+ <div class="about-me " id="about-links">
+  <span class="close-about-box" > <a href="#" id="about-toggle-close" ><i class='bx bx-x'></i></a></span>
+  <h1 class="about-h1">About<span class="me-h1">Me</span></h1>
+  <div class="about-me-photo"><img src="im2.png" class="image-about-me"></div>
+  <h3 class="about-me-h3">BCA 2nd year student|</h3>
+  <div class="about-me-info">
+    <p class="about-me-info1">I'm Sagar Masale and I belongs form Solapur. I have completed my school from S.V.C.S High School  and now as a BCA (Bachelor of
+     Computer Applications) student, i am pursuing an undergraduate degree in the field of computer applications from Sangameshwar College, Solapur Autonomous.
+    </p>
+    </div><div class="read">
+    <a class="about-me-read-more" href="guitar.html"> Read more </a></div>
+</div><!-- second page about me close -->
+ <!-- third page education -->
+ <div class="education-me "  id="education-links"><br><br>
+  <span class="close-education-box" > <a href="#" id="education-toggle-close" ><i class='bx bx-x'></i></a></span>
+  <h2 class="education-logo">Education</h2>
+  <h1 class="introduce-logo"> I would like to introduce my qualifications</h1>
+  <div class="education-10th"><h3 class="logo-cal-p"><i class='bx bx-calendar-alt'></i><span class="introduce-month">Jan 2019 - Jan 2020</span><h4 class="completed">10th Completed</h4>
+     <p class="introduce-info"> I hold a 10th qualification. Despite being an important milestone in my educational journey, my 10th qualification has provided me with a strong foundation
+       of knowledge and skills....
+      </p> </h3></div>
+  <div class="education-12th"><h3 class="logo-cal-p"><i class='bx bx-calendar-alt'></i><span class="introduce-month">Jan 2021 - Jan 2022</span> <h4 class="completed">12th Completed</h4><p class="introduce-info">I am proud to hold a 12th 
+    qualification. This milestone in my educational journey marks the completion of my secondary education and has equipped me with a comprehensive understanding of various subjects.</p></h3></div>
+  <div class="education-bca"><h3 class="logo-bca"><i class='bx bx-calendar-alt'></i><span class="introduce-month-BCA">Jan 2022 - Jan 2023</span> <h4 class="completed-BCA1">BCA 1st year completed</h4> <p class="introduce-info-BCA"> I have
+     recently achieved BCA (Bachelors's in Computer Application)1st year</p></div></div>
+<!-- third page education close -->
+<!-- forth page skills -->
+<div class="skills-me "  id="skills-links"><br>
+  <span class="close-skills-box" > <a href="#" id="skills-toggle-close" ><i class='bx bx-x'></i></a></span>
+  <h2 class="education-logo">Skills</h2>
+  <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-html5'><h6 class="logo-name"> HTML</h6></i></span><p class="introduce-info">I have a strong command of HTML (Hypertext Markup Language), which is the fundamental 
+    building block of web pages. With my HTML skills, I can effectively structure and present content on websites. Here are some key aspects of my HTML expertise..<a class="read-more-btn" href="htmlskills.html">read more</a></p></div>
+  <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-css3' ><h6 class="logo-name">  CSS</h6></i></span><p class="introduce-info">I possess a strong command of CSS, which is a vital component of web development used to control 
+    the visual appearance of web pages. With my CSS skills, I can bring life to HTML elements, enhance user experiences, and ensure consistent design across websites. Here are some key aspects of my CSS expertise..<a class="read-more-btn" href="cssinfo.html">read more</a></p></div>
+  <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-javascript' ><h6 class="logo-name-js"> JS</h6></i></span><p class="introduce-info">Learning...</p></div>
+  <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-c-plus-plus'><h6 class="logo-name"> C++</h6></i></span><p class="introduce-info">Learning...</p></div>
+  <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-react' ><h6 class="logo-name"> React</h6></i></span><p class="introduce-info">Learning...</p></div>
+  <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-java' ><h6 class="logo-name-java"> JAVA</h6></i></span><p class="introduce-info">Learning...</p></div>
+ </div>
+ <!-- forth page skills close -->     
+  <!-- first page -->
+ 
+  <div class="first-page">
+    <div class="moible">
+     <div class="home-content">
+       <h3 class="hello-me">Hello, It's Me</h3>
+        <h1 class="sagar-masale">sagar masale</h1><br>
+        <h3 class="hello-me">And I'm a <span class="multiple-text"></span></h3><br>
+        <p>This is my official portfolio website to showcase my all works related to web development .</p>
+        </div>
+        <div class="image">
+        <img src="sagarm.png" class="imageme">
+     </div>
+   </div>
 
-
-
-
-
-
-
-
+    <div class="social-media">
+    <a href="#"><i class='bx bxl-facebook' ></i></a>
+    <a href="#"><i class='bx bxl-twitter' ></i></a>
+    <a href="https://instagram.com/its_sagar_27_?igshid=ZDdkNTZiNTM="><i class='bx bxl-instagram-alt' ></i></a>
+    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+    <a href="#" class="Download"><span class="Download1">Download</span> <span class="CV">CV</span> </a>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </div><!-- first page close -->
        
-           <!-- first page -->
-        <div class="first-page">
-          <div class="moible">
-           <div class="home-content">
-            <h3 class="hello-me">Hello, It's Me</h3>
-            <h1 class="sagar-masale">sagar masale</h1><br>
-            <h3 class="hello-me">And I'm a <span class="multiple-text"></span></h3><br>
-            <p>hello im sagar sunil masale My strength is I'm a good learner and a self-motivated person.</p>
-            </div>
-             <div class="image">
-              <img src="im2.png" class="imageme">
-             </div>
-             </div>
-
-              <div class="social-media">
-               <a href="#"><i class='bx bxl-facebook' ></i></a>
-               <a href="#"><i class='bx bxl-twitter' ></i></a>
-               <a href="https://instagram.com/its_sagar_27_?igshid=ZDdkNTZiNTM="><i class='bx bxl-instagram-alt' ></i></a>
-               <a href="#"><i class='bx bxl-linkedin' ></i></a>
-          </div>
-            <a href="#" class="Download"><span class="Download1">Download</span> <span class="CV">CV</span> </a>
-            <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-            <script src="script.js"></script>
+       
          
-        </div><!-- first page close -->
-        <!-- second page about me -->
-        <div class="about-me">
-          <h1 class="about-h1">About<span class="me-h1">Me</span></h1>
-          <div class="about-me-photo"><img src="im2.png" class="image-about-me"></div>
-          <h3 class="about-me-h3">BCA 2nd year student|</h3>
-          <div class="about-me-info">
-            <p class="about-me-info1">I'm Sagar Masale and I belongs form Solapur. I have completed my school from S.V.C.S High School  and now as a BCA (Bachelor of
-             Computer Applications) student, i am pursuing an undergraduate degree in the field of computer applications from Sangameshwar College, Solapur Autonomous.
-            </p>
-            </div>
-          <input type="submit" value="More info" id="button" class="about-me-read-more">
-        </div><!-- second page about me close -->
-        <!-- third page education -->
-        <div class="education-me">
-          <h2 class="education-logo">Education</h2>
-          <h1 class="introduce-logo"> I would like to introduce my qualifications</h1>
-          <div class="education-10th"><h3 class="logo-cal-p"><i class='bx bx-calendar-alt'></i><span class="introduce-month">Jan 2019 - Jan 2020</span><h4 class="completed">10th Completed</h4>
-             <p class="introduce-info"> I hold a 10th qualification. Despite being an important milestone in my educational journey, my 10th qualification has provided me with a strong foundation
-               of knowledge and skills....
-              </p> </h3></div>
-          <div class="education-12th"><h3 class="logo-cal-p"><i class='bx bx-calendar-alt'></i><span class="introduce-month">Jan 2021 - Jan 2022</span> <h4 class="completed">12th Completed</h4><p class="introduce-info">I am proud to hold a 12th 
-            qualification. This milestone in my educational journey marks the completion of my secondary education and has equipped me with a comprehensive understanding of various subjects.</p></h3></div>
-          <div class="education-bca"><h3 class="logo-bca"><i class='bx bx-calendar-alt'></i><span class="introduce-month-BCA">Jan 2022 - Jan 2023</span> <h4 class="completed-BCA1">BCA 1st year completed</h4> <p class="introduce-info-BCA"> I have
-             recently achieved BCA (Bachelors's in Computer Application)1st year</p></div></div>
-        <!-- third page education close -->
-         <!-- forth page skills -->
-           <div class="skills-me">
-            <h2 class="education-logo">Skills</h2>
-            <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-html5'><h6 class="logo-name"> HTML</h6></i></span><p class="introduce-info">I have a strong command of HTML (Hypertext Markup Language), which is the fundamental 
-              building block of web pages. With my HTML skills, I can effectively structure and present content on websites. Here are some key aspects of my HTML expertise..<a class="read-more-btn" href="htmlskills.html">read more</a></p></div>
-            <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-css3' ><h6 class="logo-name">  CSS</h6></i></span><p class="introduce-info">I possess a strong command of CSS, which is a vital component of web development used to control 
-              the visual appearance of web pages. With my CSS skills, I can bring life to HTML elements, enhance user experiences, and ensure consistent design across websites. Here are some key aspects of my CSS expertise..<a class="read-more-btn" href="cssinfo.html">read more</a></p></div>
-            <div class="skills-me-box1"><span class="skills-logo"><i class='bx bxl-javascript' ><h6 class="logo-name-js"> JS</h6></i></span><p class="introduce-info">Learning...</p></div>
-            <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-html5'><h6 class="logo-name"> HTML</h6></i></span><p class="introduce-info">Learning...</p></div>
-            <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-react' ><h6 class="logo-name"> React</h6></i></span><p class="introduce-info">Learning...</p></div>
-            <div class="skills-me-box2"><span class="skills-logo"><i class='bx bxl-java' ><h6 class="logo-name-java"> JAVA</h6></i></span><p class="introduce-info">Learning...</p></div>
-           </div>
-           <!-- forth page skills close -->
-            <!-- fifth page Contact -->
-           
-            <script>
-              const toggleButton=document.getElementById('contact-toggle');
-              const contactbox=document.getElementById('contact-links');
-              
-              
-              toggleButton.addEventListener('click', () =>{
-                contactbox.classList.toggle('active');
-              } )
-            </script>
-     </body>
+  
+    <script>
+      const toggleButton=document.getElementById('contact-toggle');             
+      const contactbox=document.getElementById('contact-links');
+      toggleButton.addEventListener('click', () =>{
+      contactbox.classList.toggle('active');
+      } )
+      const toggleButtonclose=document.getElementById('contact-toggle-close');             
+      const contactbox1=document.getElementById('contact-links');
+      toggleButtonclose.addEventListener('click', () =>{
+      contactbox.classList.toggle('active');
+      } )
+      const toggleButton1=document.getElementById('about-toggle');             
+      const aboutme=document.getElementById('about-links');
+      toggleButton1.addEventListener('click', () =>{
+      aboutme.classList.toggle('active');
+      } )
+      const toggleButtonclose1=document.getElementById('about-toggle-close');             
+      const aboutme1=document.getElementById('about-links');
+      toggleButtonclose1.addEventListener('click', () =>{
+      aboutme1.classList.toggle('active');
+      } )
+      const toggleButton2=document.getElementById('education-toggle');             
+      const educationme=document.getElementById('education-links');
+      toggleButton2.addEventListener('click', () =>{
+      educationme.classList.toggle('active');
+      } )
+      const toggleButtonclose2=document.getElementById('education-toggle-close');             
+      const  educationme1=document.getElementById('education-links');
+      toggleButtonclose2.addEventListener('click', () =>{
+      educationme1.classList.toggle('active');
+      } )
+      const toggleButton3=document.getElementById('skills-toggle');             
+      const skillsme=document.getElementById('skills-links');
+      toggleButton3.addEventListener('click', () =>{
+      skillsme.classList.toggle('active');
+      } )
+      const toggleButtonclose3=document.getElementById('skills-toggle-close');             
+      const skillsme1=document.getElementById('skills-links');
+      toggleButtonclose3.addEventListener('click', () =>{
+      skillsme1.classList.toggle('active');
+      } )
+    </script>
+            
+  </body>
 </html>
