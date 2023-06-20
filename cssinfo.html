@@ -10,14 +10,14 @@
             margin: 0;
             padding: 0;
         }
-        .front-box{
-           
-            width: 100%;
-            height: 130vh;
-            
-            
+        body{
+            background-color: rgb(30, 29, 29);
         }
-        
+        .front-box{
+            animation: slideRight 1s ease forwards;
+            width: 100%;
+            height: 130vh;           
+        }  
         .more-info-html{
            
             display: flex;
@@ -28,38 +28,105 @@
             height: 30vh;
         }
         h2{
-            text-align: center;
-           
+            text-align: center;  
+            color: rgba(201, 197, 197, 0.795);
+            margin-top: 3%;
         }
         .html-logo{
-            color: rgb(255, 106, 0);
+            color: rgb(255, 55, 0);
             font-size: 80px;
             margin-top: 20px;
-         
         }
         .logo-box{
             width: 100px;
             height: 100px;
-            border: 2px solid rgb(255, 0, 0);
+            margin-top: 5%;
+            background-color: rgba(255, 250, 250, 0.949);
+            border: 2px solid rgba(0, 0, 0, 0.734);
+            box-shadow: 0 0 20px rgba(214, 214, 214, 0.925);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .more-info-start{
-            
+            color: rgba(201, 197, 197, 0.795);
             margin-left: 5%;
+            margin-top: 3%;
             width: 80%;
             height: 80vh;
         }
-       
-      
+        .info-point{
+            text-decoration: underline;
+            margin-bottom: 20px;
+            
+        }
         .more-info-start{
             text-align: start;
         }
         .Back{
-            color: black;
+            color: rgb(201, 197, 197);
+            
         }
+        .Back:hover{
+            color: rgba(255, 255, 255, 0.142);    
+        }
+        @keyframes slideRight {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        @media screen and (max-width:768px  ) {
+            .more-info-html{
+            justify-content:start;
+            flex-direction:row;
+            width: 100%;
+            height: 20vh;
+        }
+        .logo-box{
+            width: 80px;
+            height:80px;
+            margin-left: 1%;
+        }
+        .html-logo{
+            color: rgb(255, 106, 0);
+            font-size: 60px;
+            margin-top: 17px;
+        }
+        h2{
+            font-size: 23px;
+            margin-left: 2%;
+        }
+        .info-point{
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width:530px  ) { 
+        .logo-box{
+            width:60px;
+            height: 60px;
+            margin-left: 1%;
+        }
+        .html-logo{
+            font-size: 50px;
+            margin-top: 17px;
+        }
+        h2{
+            font-size: 20px;
+            margin-left: 1%;
+        }
+        .info-point{
+            font-size: 15px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
         @media screen and (max-width:768px  ) {
             .more-info-html{
             justify-content:start;
@@ -179,7 +246,7 @@
                                  <h3 class="info-point">*6..Flexbox and Grid Layouts:</h3><p>I am proficient in CSS layout techniques, such as Flexbox and CSS Grid. I can create flexible and responsive grid-based layouts, arrange elements in
                                      rows and columns, and control alignment and positioning of items within containers.</p><br><br>
                             <h4>#By leveraging these CSS skills, I can contribute to the visual appeal, responsiveness, and overall user experience of websites.</h4><br>
-                            <a class="Back" href="index.html">Back to home page</a>
+                            <a class="Back" href="portfolio.html">Back to home page</a>
                         </div>
     
 </div>
