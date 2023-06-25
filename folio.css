@@ -229,12 +229,9 @@ body{
 .about-me-photo{
     width: 200px;
     height: 200px;
-    border-radius:50%;
-    border: 2px solid  #0ef;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-style:dashed;  
     animation: slideRight 1.6s ease forwards;
     animation-delay: .2s;
 }
@@ -708,23 +705,14 @@ textarea::placeholder{
 .home-content p{
      font-size: 12px;
     }
-
 .about-me-photo{
      width: 170px;
      height: 170px;
-     border-radius:50%;
-     border: 2px solid  #0ef;
      display: flex;
      align-items: center;
      justify-content: center;
-     border-style:dashed; 
-    
     }
 .image-about-me{
-     width: 95%;
-     height: 95%;
-     border-radius:50%;  
-     border: 2px solid  #0ef;
      display: flex;
      align-items: center;
      justify-content: center;
