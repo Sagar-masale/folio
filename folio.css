@@ -42,15 +42,16 @@ body{
 }
 
 .image{   
+    /* border: 2px solid red; */
     width:60%;
-    height:fit-content;
+    height:123%;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: slideIn 1s ease forwards;
 }
 .imageme{
-    width: 100%;
+    width: 840px;
     height: 100%;
     filter:drop-shadow( 0 0 20px rgb(74, 74, 74))
 }
