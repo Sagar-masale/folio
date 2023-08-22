@@ -239,7 +239,7 @@ body{
 }
 .image-about-me{
     width: 170%;
-    height: fit-content;
+    height: 100%;
     margin-bottom:10px;
     display: flex;
     align-items: center;
