@@ -16,6 +16,7 @@ body{
 }
 
 .first-page{ 
+    /* border: 2px solid red; */
     width: 100%;
     height: 100vh; 
     background-image: url(black.jpg);
@@ -31,7 +32,6 @@ body{
     display: flex;
 }
 .home-content{
-    
     color: aliceblue;  
     margin-left: 3%;
     margin-top: 5%;
@@ -51,7 +51,8 @@ body{
     animation: slideIn 1s ease forwards;
 }
 .imageme{
-    width: 840px;
+    /* border: 2px solid rgb(21, 0, 255); */
+    width: 100%;
     height: 100%;
     filter:drop-shadow( 0 0 20px rgb(74, 74, 74))
 }
@@ -972,13 +973,13 @@ textarea::placeholder{
         font-weight: 500;
         margin: -3px 0;   
     } 
-    .image{   
-        width:100%;    
+    .image{  
+        width: 100%; 
+          
     }
     .imageme{
-        width: 105%;
-        
-        
+        width: 376px;
+        height: 275px;  
     }
     
     
@@ -1097,6 +1098,11 @@ textarea::placeholder{
     }
 }
 @media screen and (max-width:369px  ) {
+    .imageme{
+        margin-right: 7%;
+        width: 316px;
+        height: 217px;
+    }
     .close-about-box{
         margin-left:86%;
         margin-top: 3%;
@@ -1149,6 +1155,11 @@ textarea::placeholder{
     }
 }
 @media screen and (max-width:334px  ) {
+    .imageme{
+        margin-right: 6%;
+        width: 316px;
+        height: 217px;
+    }
     .home-content h1 {
         font-size: 38px;
         font-weight: 400;
